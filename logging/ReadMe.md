@@ -4,6 +4,12 @@
 
 This set of samples show how easy it is to use the logger instead of a print statement, for debugging. This is especially useful for running script that run on a schedule, or big ETL.
 
+## Content
+
+ - `simple_logging.py`: A basic logging configuration, that does not have to catch exceptions.
+ - `simple_logging_error.py`: A basic logging configuration, that shows the best way to log exceptions.
+ - `logging\simple_logging_from_config.py`: A demonstration of how to configure your logging from a configuration file.
+
 ## Why logging over print?
 
  - Logging can be configured to write to a file.
@@ -34,4 +40,3 @@ Traceback (most recent call last):
     raise Exception ("Run into dummy error!")
 Exception: Run into dummy error!
 ```
-

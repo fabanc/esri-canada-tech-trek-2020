@@ -5,7 +5,7 @@ import yaml
 
 def load_from_config(config_path):
     with open(config_path, 'r') as config:
-        config_dictionary = yaml.load(config.read())
+        config_dictionary = yaml.safe_load(config.read())
         config_dictionary['logging']["handlers"]["file_handler"]["filename"] = "{0}\{1}".format(os.path.dirname(os.path.realpath(__file__)), 'sample.log')
         logging.config.dictConfig(config_dictionary['logging'])
 

@@ -7,6 +7,4 @@ https://medium.com/@ianmcintyre_38849/creating-custom-conda-environments-in-an-a
 
  - Go to the root of your conda installation: `cd C:\Program Files\ArcGIS\Pro\bin\Python\Scripts`
  - Activate the environement you have created: `activate arcgispro-py3-update-agol`
- - Remove the pinned dependency on pyshp: `conda remove pyshp --no-pin`
- - (Might be optional) Install the requied new version for `conda install --no-pin pyshp=2.0.1`
- - `conda install --no-pin arcgis=1.8.0`
+ - Remove the pinned dependency on pyshp: `conda install --no-pin arcgis=1.8.0`
